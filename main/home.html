@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISSATm</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body background="bgg.avif">
+   <header class="main">
+    <div class="main">
+        <dir class="logo">
+            <img src="ISSAT.png" height="75px" width="50px" >
+        </dir>
+        <div class="topnav">
+            <a class="active" href="">Home</a><a>
+            <a href="">About</a>
+            <a id="class" class="#card"  href="">Classes </a>
+            <li><a href="">Time Table</a>
+            <div class="sub-menu">
+                <ul>
+                    <li id="ISI" onclick="auth1()"><a href="ISI.pdf">ISI</a> </li>
+                    <li id="SI" onclick="auth3()"><a href="SI.pdf">SI</a></li>
+                    <li id="TIC" onclick="auth4()"><a href="TIC.pdf">TIC</a></li>
+                    <li><a href="">MASTER</a> </li>   
+                    <li id="EEA" onclick="auth2"><a href="EEA.pdf">EEA</a> </li>
+                </ul>
+            </div></li>
+        </div>
+         
+    </div>
+    
+</header>
+<main>
+    <div class="title">
+        <h1>ISSATm Reservation</h1>
+
+    </div>
+    <div class="button">
+        <a href="#card" class="btn">classrooms</a>
+        <a href="#" class="btn">reservations</a>
+    </div>
+    </main>
+   <footer> 
+        <div class="row">
+            <div class="col">
+               
+                <div class="card">
+                    <h4><b>Salle de réunion</b></h4>
+                    <p><b> salle équipée d'une table ronde et de 6 chaises pouvant accueillir
+                        au plus 6 personnes. 
+                    </b></p>
+                </div>
+                
+             
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function auth1(){
+        var  ISI= document.getElementById("ISI").value;
+        window.location.assign(<embed src="ISI.pdf" type="application/pdf" width="100%" height="600px" />);
+    }
+</script>
+<script>
+    function auth2(){
+        var  EEA= document.getElementById("EEA").value;
+        window.location.assign(<embed src="EEA.pdf" type="application/pdf" width="100%" height="600px" />);
+    }
+</script>
+<script>
+    function auth3(){
+        var  SI= document.getElementById("SI").value;
+        window.location.assign(<embed src="SI.pdf" type="application/pdf" width="100%" height="600px" />);
+    }
+</script>
+<script>
+    function auth4(){
+        var  TIC= document.getElementById("TIC").value;
+        window.location.assign(<embed src="TIC.pdf" type="application/pdf" width="100%" height="600px" />);
+    }
+</script>
+    <script>
+    function openPage(){
+        window.location.href = "classes.html";
+}
+    
+</script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/images/logo.jpg">
+    <link rel="stylesheet" href="login.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="container">
+        <form action="home.html" class="login" id="login">
+            <h2>Log In</h2>
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="email" class="form-control" id="mail-log" name="mail-log" required placeholder="Enter your institutional email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password-log" name="password-log" placeholder="password" required>
+            </div>
+            <button type="submit" class="btn" id="btn-log">Log in</button>
+            <p class="text-log text" id="text-log">Create an account</p>
+        </form>
+        <form action="home.html" class="signup" id="signup">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="email" class="form-control" id="mail-sign" name="mail-log" placeholder="Enter your institutional email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password-sign" name="password-log" placeholder="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" class="form-control" id="password-confirm" name="password-log" placeholder="confirm password" required>
+            </div>
+            <button type="submit" class="btn" id="btn-sign">Sign up</button>
+            <p class="text-sign text" id="text-sign">Already have an account</p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
